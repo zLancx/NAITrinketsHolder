@@ -20,7 +20,7 @@
     "presets",
     "cli"
   ],
-  "author": "you",
+  "author": "zLancx",
   "license": "MIT",
   "engines": {
     "node": ">=18.x"

@@ -9,7 +9,7 @@ Runs on Node 18+ (no dependencies).
 
 ```bash
 npm install
-npm link          # optional: exposes the `trinkets` command globally
+npm link     
 ```
 
 ## Usage
@@ -46,8 +46,7 @@ Variables interpolate `{{var}}` or `{{var:default}}` inside `prompt` / `negative
 ## Project layout
 
 ```
-.
-├─ trinkets/                 # your data — safe to git commit
+├─ trinkets/                 # your data. safe to git commit
 │  ├─ text/
 │  └─ image/
 ├─ src/
@@ -78,14 +77,13 @@ Variables interpolate `{{var}}` or `{{var:default}}` inside `prompt` / `negative
     "cfg": 6.5,
     "size": "832x1216"
   },
-  "notes": "anything you'd like to remember"
 }
 ```
 
-## Stability notes
+## Notes
 
 - Writes are atomic (write to a temp file, then rename) so a crash mid-write can't corrupt a trinket file.
-- Malformed JSON files on disk are skipped, not fatal — the CLI keeps working around them.
+- Malformed JSON files on disk are skipped, not fatal, the CLI keeps working around them.
 - Names are validated and sanitized before touching the filesystem; path traversal is rejected.
 - Every command has a matching error path tested in `test/`.
-- Run `npm test` to execute the test suite.
+- Run `npm test` to execute the test run.
