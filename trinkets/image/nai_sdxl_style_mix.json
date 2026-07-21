@@ -1,0 +1,19 @@
+{
+  "name": "nai_sdxl_style_mix",
+  "kind": "image",
+  "model": "NAI",
+  "tags": [
+    "style",
+    "sdxl",
+    "anime"
+  ],
+  "prompt": "masterpiece, best quality, {{subject}}, moody lighting, filmic grain, subtle rim light, painterly edges, style mix: (NAI-anime:0.6)+(semi-real:0.4)",
+  "negative_prompt": "lowres, jpeg artifacts, extra fingers, bad hands, blurry, watermark, signature",
+  "params": {
+    "sampler": "k_euler",
+    "steps": 30,
+    "cfg": 6.5,
+    "size": "832x1216"
+  },
+  "notes": "Tweak weights. Swap sampler to k_euler_a for softer edges."
+}

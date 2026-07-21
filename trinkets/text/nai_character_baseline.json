@@ -1,0 +1,14 @@
+{
+  "name": "nai_character_baseline",
+  "kind": "text",
+  "model": "NAI",
+  "tags": [
+    "character",
+    "baseline",
+    "prose"
+  ],
+  "prompt": "Character: {{name}}\nBrief: {{brief}}\nTone: {{tone}}\nConstraints: concise, vivid, no purple prose.",
+  "negative_prompt": "",
+  "params": {},
+  "notes": "Use vars: name=Rhea, brief='mercenary with a soft spot', tone='dry-witty'"
+}

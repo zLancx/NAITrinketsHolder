@@ -1,0 +1,29 @@
+{
+  "name": "nai-trinket-holder",
+  "version": "0.2.0",
+  "private": true,
+  "bin": {
+    "trinkets": "src/trinkets.js"
+  },
+  "type": "module",
+  "description": "A lightweight CLI to organize, tag, and render text/image gen trinkets (prompts, presets) for NAI/SD/etc.",
+  "scripts": {
+    "start": "node src/trinkets.js",
+    "dev": "node src/trinkets.js",
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "novelai",
+    "nai",
+    "stable-diffusion",
+    "prompts",
+    "presets",
+    "cli"
+  ],
+  "author": "you",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.x"
+  },
+  "dependencies": {}
+}

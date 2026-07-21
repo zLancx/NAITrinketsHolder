@@ -1,0 +1,19 @@
+{
+  "name": "nai_portrait_lowkey",
+  "kind": "image",
+  "model": "NAI",
+  "tags": [
+    "portrait",
+    "lowkey",
+    "lighting"
+  ],
+  "prompt": "masterpiece, best quality, {{subject}}, low-key lighting, deep shadows, soft specular highlights, 85mm look, shallow depth of field",
+  "negative_prompt": "overexposed, flat, washed out, harsh shadow banding",
+  "params": {
+    "sampler": "k_euler",
+    "steps": 28,
+    "cfg": 6.2,
+    "size": "768x1152"
+  },
+  "notes": "Use subject='female android' or similar. Try cfg 5.8\u20137.2."
+}
